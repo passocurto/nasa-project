@@ -5,7 +5,7 @@ const Footer = () => {
   return <ArwesFooter animate>
     <Centered>
       <Paragraph style={{ fontSize: 14, margin: "10px 0" }}>
-        This is not an official site and is not affiliated with NASA or SpaceX in any way. For educational purposes only.
+      This is not an official site and is not affiliated with NASA or SpaceX in any way. For educational purposes only. By <a style={{ color: "white" }} href="https://www.linkedin.com/in/ricardo-passinho/"> @passocurto </a>
       </Paragraph>
     </Centered>
   </ArwesFooter>
