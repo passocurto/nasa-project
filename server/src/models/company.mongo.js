@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
 const companySchema = new mongoose.Schema({
+    companyNumber:{
+        type:String,
+        require: true,
+    },
     ceo:{
         type:String,
         require: true,
@@ -29,18 +33,18 @@ const companySchema = new mongoose.Schema({
         type: String,
         require: true,
     },
-    // headquarters: {
-    //     type: Object,
-    //     require: true,
-    // },
+    headquarters: {
+        type: Object,
+        require: true,
+    },
     launch_sites:{
         type: Number,
         require: true,
     },
-    // links: {
-    //     type: Object,
-    //     require: true,
-    // },
+    links: {
+        type: Object,
+        require: true,
+    },
     name:{
         type: String,
         require: true,
@@ -62,4 +66,7 @@ const companySchema = new mongoose.Schema({
         require: true,
     }
 
-})
+});
+
+// Connects companySchema with the "company" collection
+module.exports = mongoose.model('Company', companySchema);
