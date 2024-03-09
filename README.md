@@ -1,27 +1,31 @@
-# NASA Mission Control Project
+# Projeto Controle da Missão NASA
 
-Keep in mind that we recommend you code along with us and use this only if you ever get stuck or you don't like to code along.
+É importante frisar que recomendamos que você acompanhe a codificação junto conosco e use este guia somente se ficar preso ou se não quiser codificar junto.
 
-## Getting Started
+## Introdução
 
-1. Ensure you have Node.js installed.
-2. Create a free [Mongo Atlas](https://www.mongodb.com/atlas/database) database online or start a local MongoDB database.
-3. Create a `server/.env` file with a `MONGO_URL` property set to your MongoDB connection string.
-4. In the terminal, run: `npm install`
+1. Certifique-se de ter o Node.js instalado.
+2. Crie um banco de dados gratuito no Mongo Atlas: [Mongo Atlas](https://www.mongodb.com/atlas/database) online ou inicie um banco de dados MongoDB local.
+3. Crie um arquivo `.env` na pasta server com uma propriedade `MONGO_URL` definida para sua string de conexão do MongoDB.
+4. No terminal, execute: npm install
 
-## Running the Project
+## Executando o Projeto
 
 1. In the terminal, run: `npm run deploy`
 2. Browse to the mission control frontend at [localhost:8000](http://localhost:8000) and schedule an interstellar launch!
 
 ## Docker
 
-1. Ensure you have the latest version of Docker installed
-2. Run `docker build -t nasa-project .`
-3. Run `docker run -it -p 8000:8000 nasa-project`
+1. Certifique-se de ter a versão mais recente do Docker instalada
+2. Execute `docker build -t nasa-project` .
+3. Execute `docker run -it -p 8000:8000 nasa-project`
 
-## Running the Tests
+## Executando os Testes
 
-To run any automated tests, run `npm test`. This will: 
-* Run all the client-side tests: `npm test --prefix client`
-* Run all the server-side tests: `npm test --prefix server` 
+Para executar qualquer teste automatizado, execute `npm test`. Isso irá:
+
+Executar todos os testes do lado do cliente: `npm test --prefix client`
+Executar todos os testes do lado do servidor: `npm test --prefix server`
+
+
+ @passocurto
